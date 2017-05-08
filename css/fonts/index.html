@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2LS</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+  <link href="assets/animate.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="assets/jquery.fittext.js"></script>
+  <script src="assets/jquery.lettering.js"></script>
+  <script src="js/jquery.textillate.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+	
+	<script>
+  $(document).ready(function(){
+    $(".nav-links").add('#down-btn').click(function(e){
+      e.preventDefault();
+      var id = $(this).attr("href");
+      var offset = $(id).offset();
+      $("html, body").animate({
+        scrollTop: offset.top	  
+      }, 400);
+    }); 
+     
+  });
+</script>
+</head>
+<body>
+    <!-- Navigation  bar-->
+   <nav class="navbar navbar-default navbar-fixed-top" id="navigation1"> 
+     <div class="container first">
+       <div class="row">
+          <div class="col-xs-2 col-xs-pull-1 col-sm-2 col-sm-push-1">
+             <!-- Business Logo -->
+            <a class="navbar-brand" id="logo"><img src="images/logo.png"></a>
+          </div>
+          <div class="col-xs-10 col-xs-offset-4 col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-1">
+            <div class="navbar nav" id="main-menu" >
+                <ul class="list-inline" >
+                  <li><a href="#my-responsive" class="nav-links">Home</a></li>
+                  <li><a href="#about_l" class="nav-links">About</a></li>
+                  <li><a href="#where_l" class="nav-links">Where We Work</a></li>
+                  <li><a href="#projects_l" class="nav-links">Projects</a></li>
+                  <li><a href="#team_l" class="nav-links">Our team</a></li>
+                  <li><a class="nav-links" href="#">Careers</a></li>
+                  <li><a href="#contact_l" class="nav-links">Contact</a></li>
+                  <li id="fb"><a class="social-media" href="#"><img src="images/fb.png"></a></li>
+                  <li id="tw"><a class="social-media" href="#"><img src="images/tw.png"></a></li>
+                  <li id="ig"><a class="social-media" href="#"><img src="images/ig.png"></a></li>
+                </ul>
+            </div>
+          </div>   
+       </div>
+     </div>    
+   </nav>
+<!-- Navigation bar will be visible if the screen < 768px -->
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navigation2">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" id="logo"><img src="images/logo.png"></a>
+        </div>
+            <ul>
+                <li class="dropdown pull-right">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                    <img src="images/menu-button.svg" id="menu-button">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#my-responsive" class="nav-links">Home</a></li>
+                    <li><a href="#about_l" class="nav-links">About</a></li>
+                    <li><a href="#where_l" class="nav-links">Where We Work</a></li>
+                    <li><a href="#projects_l" class="nav-links">Projects</a></li>
+                    <li><a href="#team_l" class="nav-links">Our team</a></li>
+                    <li><a href="#" class="nav-links">Careers</a></li>
+                    <li><a href="#contact_l" class="nav-links">Contact</a></li>
+                    <li class="divider"></li>
+                    <li style="display: inline-block;"><a href="#" style="padding-right:0px;" id="mi1"><img src="images/fb.png"></a></li>
+                    <li style="display: inline-block;"><a href="#" style="padding-right:0px;" id="mi2"><img src="images/tw.png"></a></li>
+                    <li style="display: inline-block;"><a href="#" style="padding-right:0px;" id="mi3"><img src="images/ig.png"></a></li>
+                  </ul>
+                </li>
+            </ul>
+    </div>
+</nav>
+<!-- End of navigation Barbados -->
+    <div class="container second">
+        <div class="row row-content">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+                <div id="my-responsive">
+                    <div class="carousel slide" id="carousel-example" data-interval="3000">
+
+                        <div class="carousel-inner">
+                                <div class="top-sec item active" index="0">
+                                        <img src="images/banner-image.png" alt="Image" style="width:100%!important" id="firstImage">
+                                        <div class="carousel-caption"><h1 class="0">Smart Solutions,</h1><h1 class="0">Dynamic Design</h1></div>
+                                </div>
+                                <div class="top-sec item" index="1">
+                                        <img src="images/02_liz_clayman.jpg" alt="Image" style="width:100%!important">
+                                        <div class="carousel-caption"><h1 class="1">Smart Solutions,</h1><h1 class="1">Dynamic Design</h1></div>
+                                </div>
+                                <div class="top-sec item" index="2">
+                                        <img src="images/2ls_rocketfuel01.jpg" alt="Image" style="width:100%!important">
+                                        <div class="carousel-caption"><h1 class="2">Smart Solutions,</h1><h1 class="2">Dynamic Design</h1></div>
+                                </div>
+                                <div class="top-sec item" index="3">
+                                        <img src="images/voa-4.jpg" alt="Image" style="width:100%!important">
+                                        <div class="carousel-caption"><h1 class="3">Smart Solutions,</h1><h1 class="3">Dynamic Design</h1></div>
+                                </div>
+                          </div>
+                      </div>
+                </div>  
+          </div>
+          <button id="down-btn" href="#about_l"><img src="images/down-bttn.png"></button>
+        </div>
+    </div>
+    <div id="about_l" style="margin-top : -85px;">
+    </div>
+    <div style="clear: both;"></div>
+<div class="general_cont" style="margin-top : 85px;">
+	
+	<div class="section_in">
+		<div class="left_who">
+			WHO <br>
+			WE ARE
+		</div>
+		<div class="right_who">
+		
+			<p>2LS is a consulting engineering firm based in New York City specializing in MEP Engineering with a passion for building design, integrated building services, and energy efficient engineering. </p>
+
+<p>2LS was formed early in 2011 with a vision and desire to influence the industry with a wide range of local and international experience in MEP building services engineering and energy consultancy. </p>
+
+<p>The 2LS team focuses on clients, owners, architects, and the design team at large, contributing to problem solving technically and efficiently.</p> 
+
+<p>We define client expectations early in the design process, and by establishing the level of performance required of the end product, we can provide advice on the appropriate procurement route and full project scope. </p>
+		</div>
+	</div>
+	
+	
+</div>
+  
+  <div class="container general_services">
+   <div class="special_services">
+    <div class="row" id="gen_serv_row">
+      <div class="col-xs-12 col-sm-12" id="main-div">
+          
+          <div class="row our_services">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-3 col-md-offset-0">
+              <h2 id="serv_title">Our Services</h2>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-0">
+              <ul class="serv">
+                <li><span>Mechanical Engineering</span></li>  
+                <li><span>Electrical Engineering</span></li>
+                <li><span>Plumbing Engineering</span></li>
+                <li><span>Sprinkler and Fire Protection</span></li>
+                <li><span>Fire Alarm Engineering</span></li>
+                <li><span>Engineering Project Management</span></li>
+              </ul>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-0">
+              <ul class="serv1">
+                <li><span>Due Diligence Reporting</span></li>  
+                <li><span>Building System Appraisals</span></li>
+                <li><span>Energy Studies and LEED AP Services</span></li>
+                <li><span>Sustainable Design</span></li>
+                <li><span>Value Engineering</span></li>
+                <li><span>Peer Reviews</span></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="row services">
+              <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 our_solutions">
+                <h3 class="solutions_title">SMART SOLUTIONS, DYNAMIC DESIGN</h3>
+                <p class="solution_text">
+                  2LS is designed to maximize the amount of time our Principals spend on projects. Our Principals directly manage each project as a point of contact for each client and project team with a dedicated technical staff under their direction on each and every project we do.
+                </p>
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 our_solutions right">
+                <h2 class="solutions_title">DESIGN INNOVATION & CONCEPT DEVELOPMENT</h2>
+                <p class="solution_text"> 
+                  Innovation is at the heart of our engineering expertise, consistently delivering on Client demands for continuous improvement. We encourage our team to introduce fresh thinking to boost productivity and successful innovations throughout 2LS.
+                </p>
+              </div>
+          </div>
+          <div class="row services">
+              <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 our_solutions">
+                <h2 class="solutions_title">DESIGN CONSULTANCY & SUPPORT</h2>
+                <p class="solution_text">
+                  The experience and resources of our designers enables us to fulfill a range of associated services, including project and building system appraisals, energy and environmental impact studies, LEED AP services and value engineering.
+                </p>
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 our_solutions right">
+                <h2 class="solutions_title">PRODUCTION & MANAGING CHANGE</h2>
+                <p class="solution_text"> 
+                  Our team is able to recalculate and reproduce drawings with speed and precision. We have many systems in place which monitor our progress at each stage, enabling us to accurately report progress and meet deadlines.
+                </p>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+	</div>
+
+
+
+<div id="where_l" style="margin-top : -85px;">
+    </div>
+<div class="container" style="margin-top : 85px;">
+		
+		<div class="row" style="max-width:1170px">
+				<div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-2">
+						<h1 class="h1-top" style="color: #858687;">Where we work</h1>		
+				</div>
+		</div>
+
+		<div class="row">
+				<div class="col-xs-12 col-xs-offset-0 col-sm-9 col-sm-offset-3">
+						<p class="info">2LS is strategically located in Midtown Manhattan with sound experience and understanding of local and national requirements, codes and standards. We are licensed in the following
+						States, and are actively adding more licenses. work on in a state not listed, let us know.
+						If you have a project you would like us to</p>
+				</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+					<img src="images/map-1.png" class="img-resposive" id="map-1">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-9">
+					<p class="info">In addition, our principals have experience working internationally with the ability and under- standing to advise clients in the following countries, and other areas accordingly.</p>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2 col-sm-2">
+				<ul class="countries">
+					<li><span>UK</span></li>
+					<li><span>Europe</span></li>   
+					<li><span>Saudi Arabia</span></li>
+					<li><span>India</span></li>
+					<li><span>China</span></li>
+					<li><span>Turkey</span></li>
+					<li><span>Korea</span></li>
+					<li><span>Australia</span></li>
+				</ul>
+			</div>
+			<div class="col-xs-3 col-sm-3">
+				<ul class="countries">
+					<li><span>Qatar</span></li>
+					<li><span>Dubai and the UAE</span></li>
+					<li><span>Barbados</span></li>
+					<li><span>Egypt</span></li>
+					<li><span>Canada</span></li>
+					<li><span>Russia</span></li>
+					<li><span>Mexico</span></li>
+					<li><span>St. Lucia</span></li>
+				</ul>
+			</div>
+			<div class="map_ww">
+					<img src="images/map-2.jpg" class="img-resposive" id="map-2">
+			</div>
+		
+
+		</div>
+
+	</div>
+	
+	<div id="projects_l" style="margin-top : -85px;">
+    </div>
+
+	<div class="gallery_cont" style="margin-top : 85px;">
+	    <div class="row" style="max-width: 1170px; margin-left: auto;margin-right: auto">
+				<div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-2">
+						<h1 class="h1-top" style="color: white;">Portfolio</h1>	
+						 <ul class="list-inline" id="gallery-links" >
+                        <li style="margin-left:47px;"><a href="#all" data-target="all">ALL</a></li>
+                        <li><a href="#retail" data-target="retail">RETAIL</a></li> 
+                        <li><a href="#residential" data-target="residential">RESIDENTIAL</a></li> 
+                        <li><a href="#commercial" data-target="commercial">COMMERCIAL</a></li> 
+                        <li><a href="#restaurant" data-target="restaurant">RESTAURANT</a></li> 
+                        <li><a href="#recreational" data-target="recreational">RECREATIONAL</a></li> 
+                        <li><a href="#media" data-target="media">MEDIA</a></li> 
+                        <li><a href="#hospitality" data-target="hospitality">HOSPITALITY</a></li> 
+                        <li><a href="#healthcare" data-target="healthcare">HEALTHCARE</a></li> 
+                    </ul>
+				</div>
+		</div>
+					
+		
+				<!-- Added code for slider Eric -->
+				<!-- Cover -->
+        <div id="cover">
+          <div class="container">
+              <div class="row" id="cover-row">
+                <div class="col-xs-10 col-xs-push-1 col-sm-4 col-sm-push-0">
+                  <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+                    <!-- TESTING -->
+                      <h1 id="project-name"></h1>
+                      <h5 class="h5" id="category" style="text-align: center;"></h5>
+                      <h5 class="h5">PROJECT ADDRESS</h5>
+                      <h6 id="project-address" class="h6"></h6>
+                      <h5 class="h5">ARCHITECT</h5>
+                      <h6 id="architect" class="h6"></h6>
+                      <h5 class="h5">ENGINEERING SERVICES</h5>
+                      <h6 id="engserv" class="h6"></h6>
+                      <h5 class="h5">SQ. FOOTAGE</h5>
+                      <h6 id="footage" class="h6"></h6>
+                      <h5 class="h5">STATUS</h5>
+                      <h6 id="status" class="h6"></h6>
+                      <p class="parag">Want to know more about this project?<br>
+                          <span id="contact-person"></span></p>
+                    </div>
+                  </div>
+                  <!-- My Slider  -->
+                      <div class="sldr">
+                          <div class="sld-list">
+                            <div class="sld-wrap">
+                            
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                          <div name="prev" class="navy prev-sld"></div>
+                          <div name="next" class="navy next-sld"></div>
+                          <!-- <div class="auto play"></div> -->
+                      </div>
+                  <!-- End of my Slider -->
+                </div> 
+                <div class="col-xs-12 col-sm-8" id="message">
+                  <img src=""  id="current-img" >
+                </div>
+              </div>  
+            </div>
+        </div>
+        <div class="close" id="close-btn">X</div>
+        <!-- End of Cover -->
+        <div class="container">
+              <div class="row">
+                  <div class="col-xs-10 col-xs-push-1 col-sm-12 col-sm-push-0">
+                   
+                    <div id="myCarousel" class="row carousel slide" data-ride="carousel" data-interval="false">
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+
+                              <div class="all item active">
+                                
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="0"><img src="images/projects/Retail/Jcrew/JCrew_RF29_04_Liz_Clayman.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="1"><img src="images/projects/Recreation/thunderbolt/JPEG/2LS_Thunderbolt-13.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="2"><img src="images/projects/Commercial/RocketFuel/2LS_ROCKETFUEL01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="3"><img src="images/projects/Retail/modoyoga/06-Modo-Yoga-NYC-DXA_2LS.png" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide1 All Class--> 
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="4"><img src="images/projects/Restaurants/BakedTribeca/Baked-4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="5"><img src="images/projects/Restaurants/LeCoqRico/RenderingPacketPage005.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="6"><img src="images/projects/Residential/Largo/North8thStreet.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="7"><img src="images/projects/Commercial/WeWork/20140127_WeWork_Soho_West-03.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide2 All Class--> 
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="8"><img src="images/projects/Retail/bshshowroom/voa-4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="9"><img src="images/projects/Restaurants/tarallucci/web/02_22_2015_ConceptSchematicDesignRevised010.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="10"><img src="images/projects/Retail/lapicida/Lapicida-02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="11"><img src="images/projects/Broadcast/desales/071912-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide3 All Class-->
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="12"><img src="images/projects/Commercial/87wythe/wytheave3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="13"><img src="images/projects/Recreation/Secaucus/88E0_03secskating08_01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="14"><img src="images/projects/Residential/Leonard/leonard.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="15"><img src="images/projects/Restaurants/Smithfield/IMG_0040.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide4 All Class-->
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="16"><img src="images/projects/Retail/topshop/02-TON0169XL.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="17"><img src="images/projects/Commercial/Montessori/montessori-1.PNG" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="18"><img src="http://placehold.it/360x240" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="19"><img src="images/projects/Retail/erno/ernolaszlo_02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide5 All Class-->
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="20"><img src="images/projects/Restaurants/Chopt/chop't_1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="21"><img src="images/projects/Retail/lane/Lane-Bryant-9-14-2012-Page-006.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="22"><img src="images/projects/Restaurants/Macchiato/macchiato.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="23"><img src="images/projects/Commercial/Madison/180-Mad-Lobby1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide6 All Class-->
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="24"><img src="images/projects/Retail/bbshop/2LS_Thunderbolt-22.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="25"><img src="images/projects/Restaurants/Trading/019.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="26"><img src="images/projects/Commercial/WoodMac/IMG_1752.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="27"><img src="images/projects/Restaurants/Pearl/image.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide7 All Class-->
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="28"><img src="images/projects/Residential/890ParkAve/890ParkAvePage005.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="29"><img src="images/projects/Retail/lv/LV-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="30"><img src="images/projects/Retail/monika/monika.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="31"><img src="http://placehold.it/360x240" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide8 All Class-->
+                              <div class="all item">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="32"><img src="images/projects/Retail/lindt/lindt2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="33"><img src="images/projects/Restaurants/Chopt/chop't_3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="34"><img src="images/projects/Restaurants/UrbanSpace/20150917-Urban_Space_Vanderbilt-2.0.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide9 All Class-->
+                              
+                              <div class="retail">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="0"><img src="images/projects/Retail/Jcrew/JCrew_RF29_04_Liz_Clayman.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="3"><img src="images/projects/Retail/modoyoga/06-Modo-Yoga-NYC-DXA_2LS.png" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="8"><img src="images/projects/Retail/bshshowroom/voa-4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="10"><img src="images/projects/Retail/lapicida/Lapicida-02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide1 Retail Class --> 
+                               <div class="retail">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="16"><img src="images/projects/Retail/topshop/02-TON0169XL.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="19"><img src="images/projects/Retail/erno/ernolaszlo_02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="21"><img src="images/projects/Retail/lane/Lane-Bryant-9-14-2012-Page-006.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="24"><img src="images/projects/Retail/bbshop/2LS_Thunderbolt-22.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide2 Retail Class --> 
+                               <div class="retail">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="29"><img src="images/projects/Retail/lv/LV-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="30"><img src="images/projects/Retail/monika/monika.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="32"><img src="images/projects/Retail/lindt/lindt2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide3 Retail Class --> 
+
+                              <div class="residential">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="6"><img src="images/projects/Residential/Largo/North8thStreet.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="14"><img src="images/projects/Residential/Leonard/leonard.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="18"><img src="http://placehold.it/360x240" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="28"><img src="images/projects/Residential/890ParkAve/890ParkAvePage005.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide1 Residential Class --> 
+                              <div class="residential">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="31"><img src="http://placehold.it/360x240" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide2 Residential Class --> 
+                              <div class="commercial">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="2"><img src="images/projects/Commercial/RocketFuel/2LS_ROCKETFUEL01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="7"><img src="images/projects/Commercial/WeWork/20140127_WeWork_Soho_West-03.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="12"><img src="images/projects/Commercial/87wythe/wytheave3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="17"><img src="images/projects/Commercial/Montessori/montessori-1.PNG" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide1 Commercial Class --> 
+                              <div class="commercial">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="23"><img src="images/projects/Commercial/Madison/180-Mad-Lobby1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="26"><img src="images/projects/Commercial/WoodMac/IMG_1752.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide2 Commercial Class --> 
+                              <div class="restaurant">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="4"><img src="images/projects/Restaurants/BakedTribeca/Baked-4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="5"><img src="images/projects/Restaurants/LeCoqRico/RenderingPacketPage005.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="9"><img src="images/projects/Restaurants/tarallucci/web/02_22_2015_ConceptSchematicDesignRevised010.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="15"><img src="images/projects/Restaurants/Smithfield/IMG_0040.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide1 Restaurant Class --> 
+                              <div class="restaurant">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="20"><img src="images/projects/Restaurants/Chopt/chop't_1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="22"><img src="images/projects/Restaurants/Macchiato/macchiato.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="25"><img src="images/projects/Restaurants/Trading/019.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="27"><img src="images/projects/Restaurants/Pearl/image.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide2 Restaurant Class --> 
+                              <div class="restaurant">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="33"><img src="images/projects/Restaurants/Chopt/chop't_3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="34"><img src="images/projects/Restaurants/UrbanSpace/20150917-Urban_Space_Vanderbilt-2.0.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide3 Restaurant Class -->   
+                              <div class="recreational">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="1"><img src="images/projects/Recreation/thunderbolt/JPEG/2LS_Thunderbolt-13.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="13"><img src="images/projects/Recreation/Secaucus/88E0_03secskating08_01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide3 Recreational Class -->  
+                              <div class="media">
+                                <ul class="thumbnails">
+                                  <li class="col-sm-3">      
+                                    <div class="thumbnail">
+                                      <a class="project-details" data-number="11"><img src="images/projects/Broadcast/desales/071912-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption"></div>
+                                  </li>
+                                </ul>
+                              </div><!-- /Slide3 Media Class -->    
+
+                            </div><!-- /Wrapper for slides .carousel-inner -->
+
+                            <!-- Control box -->
+                            <div class="control-box">                            
+                              <a data-slide="prev" href="#myCarousel" class="carousel-control left">&#x2039;</a>
+                              <a data-slide="next" href="#myCarousel" class="carousel-control right">&#x203A;</a>
+                            </div><!-- /.control-box -->   
+
+                        </div><!-- /#myCarousel -->
+                    </div><!-- /.col-sm-12 -->          
+              </div><!-- /.row --> 
+        </div><!-- /.container -->			
+	</div>
+	<!--End of Gallery container  -->
+  
+  
+  <div id="team_l" style="margin-top : -85px;">
+    </div>
+  <!-- Team Container  -->
+  <div class="container management" style="margin-top : 85px;">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-4 col-sm-9 col-sm-offset-3 col-md-8 col-md-offset-3">
+          <h1 id="team-h1">Our Management Team</h1>
+        </div>  
+    </div>
+  <br>
+    <div class="row">
+      <div class="col=xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1" id="modal">
+        <div class="close" id="close">X</div>
+          <div class="row">
+              <div class="col-xs-10 col-xs-push-1 col-sm-5 col-sm-push-0 profile">
+                  <img src=""  class="img-responsive" id="profile-image">
+              </div>
+              <div class="col-xs-10 col-xs-push-1 col-sm-7 col-sm-push-0 profile">
+                <h2 id="tm_name"></h2>
+                <h4 id="tm_title"></h4>
+                <h5 id="tm_email"><a href=""></a></h5>
+                <p id="tm_info"></p>
+                <p id="tm_info2"></p>
+                <a id="team-btn2"><img src="images/team-btn.jpg"></a>
+              </div>
+          </div>
+          <a id="team-btn"><img src="images/team-btn.jpg"></a>
+        </div>
+    </div>
+    <div class="row full-team" id="first-row">
+      <div class="col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-1" id="jeremy">
+        <div class="first-row">
+          <div class="first-row-label"><h3>Jeremy Latterman</h3></div>
+          <img src="images/jeremy.png" class="img-responsive team" data-target="jeremy">
+        </div>
+      </div>
+      <div class="col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-1" id="greg">
+        <div class="first-row">
+          <div class="first-row-label"><h3>Greg Leone</h3></div>
+          <img src="images/greg.png" class="img-responsive team" data-target="greg">
+        </div>
+      </div>
+      <div class="col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-1" id="paul">
+        <div class="first-row">
+          <div class="first-row-label"><h3>Paul Soames</h3></div>
+          <img src="images/paul.png" class="img-responsive team" data-target="paul">
+        </div>
+      </div>
+    </div>
+    
+    <div class="row full-team" id="second-row">
+      <div class="col-xs-2 col-xs-offset-1 col-sm-2 col-sm-offset-1" id="marc">
+          <div class="second-row">
+            <div class="second-row-label"><h5>Marc-Henry Gateau</h5></div>
+              <img src="images/marc.png" class="img-responsive team" data-target="marc">
+          </div>
+      </div>
+      <div class="col-xs-2 col-sm-2" id="eamon">
+          <div class="second-row">
+            <div class="second-row-label"><h5>Eamonn Keane</h5></div>
+              <img src="images/eamon.png" class="img-responsive team" data-target="eamon">
+          </div>
+      </div>
+      <div class="col-xs-2 col-sm-2" id="michael">
+          <div class="second-row">
+            <div class="second-row-label"><h5>Michael Migliaccio</h5></div>
+              <img src="images/michael.png" class="img-responsive team" data-target="michael">
+          </div>
+      </div>
+      <div class="col-xs-2 col-sm-2" id="will">
+          <div class="second-row">
+            <div class="second-row-label"><h5>Will Shoard</h5></div>
+              <img src="images/will.png" class="img-responsive team" data-target="will">
+          </div>
+      </div>
+      <div class="col-xs-2 col-sm-2" id="tricia">
+          <div class="second-row">
+            <div class="second-row-label"><h5>Tricia Zahirudin</h5></div>
+              <img src="images/tricia.png" class="img-responsive team" data-target="tricia">
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Team Container-->
+	
+	<div id="contact_l" style="margin-top : -85px;">
+    </div>
+	
+	<div class="container container_cont" style="margin-top : 85px;">
+		<div class="row" style="max-width: 1170px; margin-left: auto;margin-right: auto">
+				<div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-2">
+						<h1 class="h1-top">Contact Us</h1>	
+				</div>
+		</div>
+			
+		<br>
+		<div class="row" >
+		<div class="special_services">
+			<div class="col-xs-9 col-xs-offset-3 col-sm-2 col-sm-offset-3" >
+				<div class="row"  style="margin-left: -38px">
+					<div class="col-xs-1 col-sm-1">
+						<img src="images/location.png" id="location">
+					</div>
+					<div class="col-xs-10 col-sm-10">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12">
+									<h6 class="contact-info">150 West 30th St. 4th Floor</h6>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-12">
+									<h6 class="contact-info">New York, NY 10001</h6>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-9 col-xs-offset-3 col-sm-3 col-sm-offset-0">
+				<div class="row" style="margin-left: -48px">
+					<div class="col-xs-1 col-sm-1">
+						<img src="images/small-phone.png" id="phone">
+					</div>
+					<div class="col-xs-10 col-sm-10">
+						<div class="row">
+							<div class="col-xs-6 col-sm-6">
+								<h6 class="contact-info">Tel: 917.267.8945</h6>
+							</div>
+							<div class="col-xs-6 col-sm-6">
+								<h6 class="contact-info">Fax: 917.423.0432</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-9 col-xs-offset-3 col-sm-3 col-sm-offset-0">
+				<div class="row">
+					<div class="col-xs-1 col-sm-1" id="web">
+						<img src="images/web.png">
+					</div>
+					<div class="col-xs-10 col-sm-10">
+						<div class="row">
+								<div class="col-xs-12 col-sm-12">
+									<h6 class="contact-info">OFFICE HOURS</h6>
+								</div>
+								<div class="col-xs-12 col-sm-12">
+									<div class="row">
+										<div class="col-xs-6 col-sm-6">
+											<h6 class="contact-info">Monday-Friday</h6>
+										</div>
+										<div class="col-xs-6 col-sm-6">
+											<h6 class="contact-info">9:00AM - 6:00PM</h6>
+										</div>
+									</div>	
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+     </div>
+      <div class="container" style="width:100%;">
+    <br><br>
+    <div class="row map">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.67915711356!2d-73.99463178511402!3d40.747084879328106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sen!2sus!4v1491416821403" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <img src="images/join.jpg" id="join">
+          <div id="form-horizontal">
+            <form class="form-horizontal">
+              <div class="form-group">
+                  <label for="full-name" class="col-xs-2 control-label"><img src="images/name.jpg" class="label-img"></label>
+                  <div class="col-xs-3 form-input">
+                      <input type="text" class="form-control" id="full-name">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="phone-number" class="col-xs-2 control-label"><img src="images/phone.jpg" class="label-img"></label>
+                  <div class="col-xs-3 form-input">
+                      <input type="text" class="form-control" id="phone-number">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="email" class="col-xs-2 control-label"><img src="images/email.jpg" class="label-img"></label>
+                  <div class="col-xs-3 form-input">
+                      <input type="email" class="form-control" id="email">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="message" class="col-xs-2 control-label"><img src="images/message.jpg" class="label-img"></label>
+                  <div class="col-xs-3 form-input">
+                      <textarea class="form-control" id="message" rows="5"></textarea>
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-3 col-xs-offset-2">
+                  <button type="submit" id="form-btn"><img src="  images/send.jpg"></button>
+                </div>
+              </div>
+          </form>
+          </div>
+        <footer>Copyright &copy; 2017 Mantis Marketing</footer>  
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
